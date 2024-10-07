@@ -15,8 +15,7 @@ nav {
     z-index: 50;
     top: 0;
     left: 0;
-    backdrop-filter: blur(4px);
-    background: rgba(255, 255, 255, 0.8);
+    background-color: white;
 }
 
 .close {
@@ -51,6 +50,10 @@ nav {
 
 .hidden {
     display: none;
+}
+
+.main{
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.30) 0%, rgba(11, 32, 222, 0.00) 100%);
 }
 
 .experience-background-color {
