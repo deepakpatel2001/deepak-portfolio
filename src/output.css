@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Gilroy-Regular';
 
-  src: url('/gilroy/Gilroy-Regular.ttf') format('truetype');
+  src: url('gilroy/Gilroy-Regular.ttf') format('truetype');
 
   font-weight: 400;
 
@@ -11,7 +11,7 @@
 @font-face {
   font-family: 'Gilroy-Medium';
 
-  src: url('/gilroy/Gilroy-Medium.ttf') format('truetype');
+  src: url('gilroy/Gilroy-Medium.ttf') format('truetype');
 
   font-weight: 500;
 
@@ -21,7 +21,7 @@
 @font-face {
   font-family: 'Gilroy-Semibold';
 
-  src: url('/gilroy/Gilroy-SemiBold.ttf') format('truetype');
+  src: url('gilroy/Gilroy-SemiBold.ttf') format('truetype');
 
   font-weight: 600;
 
@@ -31,7 +31,7 @@
 @font-face {
   font-family: 'Gilroy-Bold';
 
-  src: url('/gilroy/Gilroy-Bold.ttf') format('truetype');
+  src: url('gilroy/Gilroy-Bold.ttf') format('truetype');
 
   font-weight: 700;
 
@@ -1291,6 +1291,10 @@ input:checked + .toggle-bg {
   display: none;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .h-14 {
   height: 3.5rem;
 }
@@ -1331,10 +1335,6 @@ input:checked + .toggle-bg {
   height: 580px;
 }
 
-.h-\[63px\] {
-  height: 63px;
-}
-
 .h-\[70px\] {
   height: 70px;
 }
@@ -1343,20 +1343,16 @@ input:checked + .toggle-bg {
   height: 100%;
 }
 
-.h-1 {
-  height: 0.25rem;
-}
-
-.h-12 {
-  height: 3rem;
-}
-
 .w-1\/2 {
   width: 50%;
 }
 
 .w-10 {
   width: 2.5rem;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .w-14 {
@@ -1387,20 +1383,8 @@ input:checked + .toggle-bg {
   width: 370px;
 }
 
-.w-\[63px\] {
-  width: 63px;
-}
-
 .w-full {
   width: 100%;
-}
-
-.w-1 {
-  width: 0.25rem;
-}
-
-.w-12 {
-  width: 3rem;
 }
 
 .flex-1 {
