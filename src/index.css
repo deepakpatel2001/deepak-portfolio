@@ -4,6 +4,50 @@
     box-sizing: border-box;
 }
 
+/* this is mainly use for switching dark to bright */
+:root {
+    --dark-white: #ffffff;
+    --dark-active: #209900;
+    --dark-heading: black;
+    --dark-paragraph: #535151;
+    --dark-blue: #0039a6;
+    --dark-btn-color: #fcf6f5;
+    --dark-skill-btn: #1b1b1b;
+}
+
+.nav-bg-color {
+    background: var(--dark-white);
+}
+
+.nav-text-color {
+    color: var(--dark-white);
+}
+
+.active-bg-color {
+    background: var(--dark-active);
+}
+
+.heading-color {
+    color: var(--dark-heading);
+}
+
+.paragraph-color {
+    color: var(--dark-paragraph);
+}
+
+.btn-font-color {
+    color: var(--dark-btn-color);
+}
+
+.dark-bg-blue {
+    background: var(--dark-blue);
+}
+
+.skill-btn {
+    background-color: var(--dark-skill-btn);
+}
+
+/* this code is mainly controlling all body */
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -15,7 +59,7 @@ nav {
     z-index: 50;
     top: 0;
     left: 0;
-    background-color: white;
+    background-color: var(--dark-white);
 }
 
 .close {
@@ -33,7 +77,7 @@ nav {
 }
 
 .hover-list:hover {
-    background: #0039a6;
+    background: var(--dark-blue);
     transition: all 0.2s ease-in;
     color: white;
 }
@@ -45,15 +89,19 @@ nav {
 }
 
 .allMenus.show {
-    max-height: 500px; 
+    max-height: 500px;
 }
 
 .hidden {
     display: none;
 }
 
-.main{
-    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.30) 0%, rgba(11, 32, 222, 0.00) 100%);
+.main {
+    background: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(255, 255, 255, 0.3) 0%,
+        rgba(11, 32, 222, 0) 100%
+    );
 }
 
 .experience-background-color {
