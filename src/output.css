@@ -1371,18 +1371,6 @@ input:checked + .toggle-bg {
   width: 16rem;
 }
 
-.w-\[292px\] {
-  width: 292px;
-}
-
-.w-\[310px\] {
-  width: 310px;
-}
-
-.w-\[370px\] {
-  width: 370px;
-}
-
 .w-full {
   width: 100%;
 }
@@ -1578,10 +1566,6 @@ input:checked + .toggle-bg {
   border-width: 0px;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
 .border-\[0\.5px\] {
   border-width: 0.5px;
 }
@@ -1617,18 +1601,6 @@ input:checked + .toggle-bg {
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
-}
-
-.border-\[\] {
-  border-color: ;
-}
-
-.border-\[1p\] {
-  border-color: 1p;
-}
-
-.border-\[1\] {
-  border-color: 1;
 }
 
 .\!bg-gray-50 {

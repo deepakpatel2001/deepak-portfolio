@@ -47,6 +47,10 @@
     background-color: var(--dark-skill-btn);
 }
 
+.heading-text{
+    font-size: 28px;
+}
+
 /* this code is mainly controlling all body */
 html {
     overflow-x: hidden;
