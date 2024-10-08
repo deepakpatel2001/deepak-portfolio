@@ -1263,6 +1263,22 @@ input:checked + .toggle-bg {
   margin-top: 6px;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-24 {
+  margin-top: 6rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .block {
   display: block;
 }
@@ -1345,6 +1361,10 @@ input:checked + .toggle-bg {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[250px\] {
+  height: 250px;
 }
 
 .w-1\/2 {
@@ -1590,11 +1610,6 @@ input:checked + .toggle-bg {
   border-width: 0.5px;
 }
 
-.border-\[\#209900\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(32 153 0 / var(--tw-border-opacity));
-}
-
 .border-\[\#53515140\] {
   border-color: #53515140;
 }
@@ -1624,6 +1639,11 @@ input:checked + .toggle-bg {
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
+.border-amber-800 {
+  --tw-border-opacity: 1;
+  border-color: rgb(146 64 14 / var(--tw-border-opacity));
+}
+
 .\!bg-gray-50 {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity)) !important;
@@ -1632,16 +1652,6 @@ input:checked + .toggle-bg {
 .bg-\[\#0039A6\] {
   --tw-bg-opacity: 1;
   background-color: rgb(0 57 166 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#1B1B1B\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(27 27 27 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#209900\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(32 153 0 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#F3F3F3\] {
@@ -1788,6 +1798,11 @@ input:checked + .toggle-bg {
   font-family: Gilroy-Semibold;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-\[10px\] {
   font-size: 10px;
 }
@@ -1837,6 +1852,10 @@ input:checked + .toggle-bg {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-\[36px\] {
+  font-size: 36px;
 }
 
 .font-medium {
@@ -1895,24 +1914,13 @@ input:checked + .toggle-bg {
   line-height: 1.5;
 }
 
-.text-\[\#000\] {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.text-\[\#535151\] {
-  --tw-text-opacity: 1;
-  color: rgb(83 81 81 / var(--tw-text-opacity));
+.leading-\[30px\] {
+  line-height: 30px;
 }
 
 .text-\[\#FCF6F5\] {
   --tw-text-opacity: 1;
   color: rgb(252 246 245 / var(--tw-text-opacity));
-}
-
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-blue-600 {
@@ -1943,6 +1951,10 @@ input:checked + .toggle-bg {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
 }
 
 .opacity-0 {
