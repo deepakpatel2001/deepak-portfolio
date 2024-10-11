@@ -18,42 +18,53 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="h-[70px] flex justify-between p-[15px] items-center navbar top-0">
+    <nav class="h-[70px] flex justify-between p-[15px] items-center navbar top-0 border-2 md:fixed">
         <div class="nav-left-image">
             <img src="images/profileImage.jpg" alt="deepak patel" class="h-14 w-14 mix-blend-darken">
         </div>
-        <div class="nav-right-menu relative">
+        <div class="nav-right-menu relative md:hidden">
             <div>
                 <img src="images/menu.png" alt="menu" class="h-12 w-12 open p-3 items-center text-center">
                 <img src="./cross image.jpg" alt="close" class="h-10 w-10 close p-3 items-center text-center hidden">
             </div>
         </div>
         <div
-            class="border-[0.5px] allMenus hidden w-full absolute top-[70px] left-0 text-center nav-bg-color py-2 font-semibold nav-list ">
-            <ul class="lists border-black h-full">
-                <li class="my-2 hover-list"><a href="#skills" class="block">Skills</a></li>
-                <li class="hover-list"><a href="#default-carousel" class="block">Projects</a></li>
-                <li class="my-2 hover-list"><a href="#services" class="block">Services</a></li>
-                <li class="hover-list"><a href="#" class="block">Resume</a> </li>
+            class="border-[0.5px] allMenus hidden w-full absolute top-[70px] left-0 text-center nav-bg-color py-2 font-semibold nav-list md:top-auto md:flex md:relative md:right-0 md:justify-center md:flex-row md:items-center md:max-w-[400px] md:border-none">
+
+
+            <ul class="lists h-full md:flex md:items-center md:justify-center md:h-full md:visible md:py-3">
+                <li class="my-2 hover-list md:mx-2"><a href="#skills" class="block ">Skills</a></li>
+
+                <li class="hover-list md:mx-2"><a href="#default-carousel" class="block ">Projects</a></li>
+
+                <li class="my-2 hover-list md:mx-2"><a href="#services" class="block ">Services</a></li>
+
+                <li class="hover-list md:mx-2"><a href="#" class="block ">Resume</a> </li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero section -->
-    <main class="mt-24 items-center text-center mx-3 flex flex-col justify-center main">
+    <main class="mt-24 items-center text-center mx-3 flex flex-col justify-center main md:mx-16">
 
-        <div class="inner-main-div ">
+        <div class="inner-main-div md:flex md:justify-center md:items-center md:flex-col">
             <button
-                class="rounded-full online active-bg-color text-white py-2 px-5 font-medium text-[10px] leading-3 text-center active-bg-color font-gilroyregular nav-text-color">Available
+                class="rounded-full online active-bg-color text-white py-2 px-5 font-medium text-[10px] leading-3 text-center active-bg-color font-gilroyregular nav-text-color md:text-[14px]">Available
                 For Work</button>
 
-            <h2 class="font-medium text-[36px] leading-[30px] mt-6 font-gilroybold heading-color">Hello, I'm <br>Deepak
+            <h2
+                class="font-medium text-[36px] leading-[30px] mt-6 font-gilroybold heading-color md:text-[70px] md:leading-[60px]">
+                Hello, I'm <br>Deepak
                 Patel </h2>
 
-            <p class="text-xl font-medium leading-5 mt-6 text-center paragraph-color my-[10px] font-gilroyregular">A
+            <p
+                class="text-xl font-medium leading-5 mt-6 text-center paragraph-color my-[10px] font-gilroyregular md:text-[25px]">
+                A
                 <span id="type-changer"></span>
             </p>
-            <p class="text-[12px] py-[10px] font-medium leading-4 text-center paragraph-color font-gilroyregular">I am a
+            <p
+                class="text-[12px] py-[10px] font-medium leading-4 text-center paragraph-color font-gilroyregular md:text-[20px] md:leading-6 md:text-justify">
+                I am a
                 passionate software
                 developer with a strong analytical mindset, I have <b>6-months</b> of industry level experience, I
                 worked with Conref Pvt. Ltd, Indore as <b>frontend developer</b> from June 2022 to July 2022 and i had
@@ -62,17 +73,18 @@
 
             <div class="flex items-center justify-center text-center gap-5 w-full py-[10px]">
                 <a href="https://www.linkedin.com/in/dev-deepak-patel/" target="_blank"><img src="images/linkedin.png"
-                        alt="linkedin"></a>
+                        alt="linkedin" class="md:h-6 md:w-6"></a>
 
-                <a href="https://github.com/deepakpatel2001" target="_blank"><img src="images/github.png"
-                        alt="github"></a>
+                <a href="https://github.com/deepakpatel2001" target="_blank"><img src="images/github.png" alt="github"
+                        class="md:h-6 md:w-6"></a>
 
-                <a href="https://t.me/deepakpatel01" target="_blank"><img src="images/telegram.png" alt="telegram"></a>
+                <a href="https://t.me/deepakpatel01" target="_blank"><img src="images/telegram.png" alt="telegram"
+                        class="md:h-6 md:w-6"></a>
             </div>
 
-            <div class="flex justify-center items-center text-center mt-4">
+            <div class="flex justify-center items-center text-center mt-4 md:w-[294px]">
                 <a href="https://www.linkedin.com/in/dev-deepak-patel/"
-                    class="w-full h-[49px] rounded-md p-[12px] blue btn-font-color text-center font-normal dark-bg-blue"
+                    class="w-full md:w-[294px] h-[49px] rounded-md p-[12px] blue btn-font-color text-center font-normal dark-bg-blue"
                     target="_blank">Let's Connect</a>
             </div>
 
@@ -82,106 +94,110 @@
     </main>
 
     <!-- About Me -->
-    <section class="mt-14 mx-3 flex justify-center items-center flex-col">
-        <h2 class="heading-color heading-text font-medium font-gilroysemibold">Know me more</h2>
+    <section class="mt-14 mx-3 flex justify-center items-center flex-col md:mx-5">
+        <h2 class="heading-color heading-text font-medium font-gilroysemibold md:text-[40px]">Know me more</h2>
         <div class="self-image-box rounded-[30px] mt-3">
             <img src="images/self-image.png" alt="my photo" class="w-full h-full">
         </div>
-        <p class="text-justify mt-3 mx-1 font-gilroyregular heading-color text-[14px]">My name is Deepak Patel and I'm
+        <p class="text-justify mt-3 mx-1 font-gilroyregular heading-color text-[14px] md:text-[20px]">My name is Deepak
+            Patel and I'm
             from Vidisha
             Dist. Madhya
             Pradesh. I have completed
             my schooling from Madhya Pradesh, and I have completed my Graduation from Sushila Devi Bansal College of
             Engineering, Indore Madhya Pradesh. I'm a quick learner and passionate about learning new technologies
-            because of my Adaptability. I enjoy coding</p>
+            because of my Adaptability. I enjoy coding.
+        </p>
 
-        <div class="flex justify-center items-center text-center my-4 w-full rounded-md">
-            <a href="tel:+919098343002"
-                class="w-full h-[49px] rounded-md p-[12px] blue btn-font-color text-center font-normal dark-bg-blue"
-                target="_blank">Contact Me</a>
-        </div>
+        <div class="w-full my-4 flex flex-col md:flex-row md:mt-4 md:justify-center md:items-center">
+            <button class="text-center rounded-md">
+                <a href="tel:+919098343002"
+                    class="w-full rounded-md p-[12px] btn-font-color text-center font-normal dark-bg-blue block md:inline"
+                    target="_blank">Contact Me</a>
+            </button>
 
-        <div class="flex justify-center items-center text-center mx-2 w-full rounded-md border-[1px]  border-black">
-            <a href="documents/Deepak_Patel_Resume.pdf"
-                class="w-full h-[49px] rounded-md p-[12px] text-center font-normal text-black"
-                target="_blank" download>Resume</a>
+            <button class="my-3 md:mx-4 text-center rounded-md border-[1px] border-black ">
+                <a href="documents/Deepak_Patel_Resume.pdf"
+                    class="w-full rounded-md text-center font-normal text-black p-[12px] block md:p-[9px]"
+                    target="_blank" download>Resume</a>
+            </button>
         </div>
     </section>
 
     <!-- Tech Stack -->
-    <section class="mt-14 mx-3 text-center" id="skills">
-        <h2 class="heading-color font-medium heading-text mb-[10px] leading-5 font-gilroysemibold">Tech Stack</h2>
-        <div class="h-[189px] flex justify-between items-center px-4 mt-4">
-            <div class="">
-                <div class="w-10 h-14">
-                    <img src="images/sm-html.png" alt="html">
-                </div>
+    <section class="mt-14 mx-3 text-center md:mx-5" id="skills">
+        <h2 class="heading-color font-medium heading-text mb-[10px] leading-5 font-gilroysemibold md:text-[40px]">Tech
+            Stack</h2>
+        <div class="h-[189px] flex justify-evenly items-center mt-8  flex-wrap gap-x-20 gap-y-2">
 
-                <div class="w-10 h-14">
-                    <img src="images/sm-bootstrap.png" alt="bootstrap">
-                </div>
-                <div class="w-10 h-14">
-                    <img src="images/sm-node.png" alt="node">
-                </div>
+            <div class="w-10 h-14 md:w-[100px] md:h-[100px]">
+                <img src="images/sm-html.png" alt="html">
+            </div>
+            <div class="w-10 h-14 md:w-[100px] md:h-[100px]">
+                <img src="images/sm-css.png" alt="css">
+            </div>
+            <div class="w-10 h-14 md:w-[100px] md:h-[100px]">
+                <img src="images/sm-js.png" alt="javascript">
             </div>
 
-            <div class="">
-                <div class="w-10 h-14">
-                    <img src="images/sm-css.png" alt="css">
-                </div>
-
-                <div class="w-10 h-14">
-                    <img src="images/sm-tw.png" alt="tailwind">
-                </div>
-
-                <div class="w-10 h-14">
-                    <img src="images/sm-jQ.png" alt="jQuery">
-                </div>
+            <div class="w-10 h-14 md:w-[100px] md:h-[100px]">
+                <img src="images/sm-bootstrap.png" alt="bootstrap">
+            </div>
+            <div class="w-10 h-14 md:w-[100px] md:h-[100px]">
+                <img src="images/sm-tw.png" alt="tailwind">
+            </div>
+            <div class="w-10 h-14 md:w-[100px] md:h-[100px]">
+                <img src="images/sm-react.png" alt="react">
             </div>
 
 
-            <div class="">
-                <div class="w-10 h-14">
-                    <img src="images/sm-js.png" alt="jQ">
-                </div>
-                <div class="w-10 h-14">
-                    <img src="images/sm-react.png" alt="react">
-                </div>
-                <div class="w-10 h-14">
-                    <img src="images/sm-github.png" alt="github">
-                </div>
+            <div class="w-10 h-14 md:w-[100px] md:h-[100px]">
+                <img src="images/sm-node.png" alt="node">
+            </div>
+            <div class="w-10 h-14 md:w-[100px] md:h-[100px]">
+                <img src="images/sm-jQ.png" alt="jQuery">
+            </div>
+            <div class="w-10 h-14 md:w-[100px] md:h-[100px]">
+                <img src="images/sm-github.png" alt="github">
             </div>
         </div>
     </section>
 
     <!-- Experience -->
-    <section class="text-center mt-14 mx-3">
-        <h2 class="heading-text font-medium leading-normal font-gilroysemibold heading-color">Experience</h2>
-        <div
-            class="one-exp experience-background-color rounded-[20px] border-[0.5px] border-[#53515140] h-[300px] flex justify-center items-center flex-col my-3 heading-color">
-            <div>
-                <h2 class="text-[96px] text-center inline leading-[117.6px] font-gilroysemibold ">5</h2>
-                <span class="font-medium text-8 leading-10 font-gilroysemibold">months</span>
-            </div>
-            <div class="w-full mt-2">
-                <h2 class="text-[18px] font-medium leading-[22.05px] font-gilroysemibold">HagnoSoft Tech. Pvt. Ltd.</h2>
-                <div class="flex justify-between p-4">
-                    <p class="font-medium text-sm leading-5 font-gilroysemibold">React.js Developer</p>
-                    <p class="font-medium text-sm leading-5 font-gilroysemibold">Bengaluru</p>
+    <section class="text-center mt-14 mx-3 md:mx-5">
+        <h2 class="heading-text font-medium leading-normal font-gilroysemibold heading-color md:text-[40px]">Experience
+        </h2>
+        <div class="flex justify-center flex-col md:flex-row md:gap-x-9 md:w-full md:justify-between">
+            <div
+                class="one-exp experience-background-color rounded-[20px] border-[0.5px] border-[#53515140] h-[300px] flex justify-center items-center flex-col my-3 heading-color md:w-[437px]">
+                <div>
+                    <h2 class="text-[96px] text-center inline leading-[117.6px] font-gilroysemibold ">5</h2>
+                    <span class="font-medium text-8 leading-10 font-gilroysemibold">months</span>
+                </div>
+                <div class="w-full mt-2">
+                    <h2 class="text-[18px] font-medium leading-[22.05px] font-gilroysemibold md:text-[25px]">HagnoSoft
+                        Tech. Pvt. Ltd.</h2>
+                    <div class="flex justify-between p-4">
+                        <p class="font-medium text-sm leading-5 font-gilroysemibold md:text-[20px]">React.js Developer
+                        </p>
+                        <p class="font-medium text-sm leading-5 font-gilroysemibold md:text-[20px]">Bengaluru</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div
-            class="second-exp experience-background-color rounded-[20px] border-[0.5px] border-[#53515140] h-[300px] flex justify-center items-center flex-col my-3">
-            <div class="">
-                <h2 class="text-[96px] text-center inline leading-[117.6px] font-gilroysemibold">1</h2>
-                <span class="font-medium text-8 leading-10 font-gilroysemibold">month</span>
-            </div>
-            <div class="w-full mt-2">
-                <h2 class="text-[18px] font-medium leading-[22.05px] font-gilroysemibold">Conref Pvt. Ltd.</h2>
-                <div class="flex justify-between p-4">
-                    <p class="font-medium text-sm leading-5 font-gilroysemibold">Frontend Developer</p>
-                    <p class="font-medium text-sm leading-5 font-gilroysemibold">Indore</p>
+            <div
+                class="second-exp experience-background-color rounded-[20px] border-[0.5px] border-[#53515140] h-[300px] flex justify-center items-center flex-col my-3 md:w-[437px]">
+                <div class="">
+                    <h2 class="text-[96px] text-center inline leading-[117.6px] font-gilroysemibold">1</h2>
+                    <span class="font-medium text-8 leading-10 font-gilroysemibold">month</span>
+                </div>
+                <div class="w-full mt-2">
+                    <h2 class="text-[18px] font-medium leading-[22.05px] font-gilroysemibold md:text-[25px]">Conref Pvt.
+                        Ltd.</h2>
+                    <div class="flex justify-between p-4">
+                        <p class="font-medium text-sm leading-5 font-gilroysemibold md:text-[20px]">Frontend Developer
+                        </p>
+                        <p class="font-medium text-sm leading-5 font-gilroysemibold md:text-[20px]">Indore</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -189,85 +205,95 @@
 
     <!-- Testimonials -->
     <section class="mt-14 mx-3 text-center heading-color">
-        <h2 class="heading-text leading-6 text-center font-medium font-gilroysemibold">Testimonial from the people</h2>
+        <h2 class="heading-text leading-6 text-center font-medium font-gilroysemibold md:text-[40px]">Testimonial from
+            the people</h2>
 
-        <div class="parent-testimonials flex justify-center items-center flex-col rounded-[20px] bg-[#FBFBFB] mt-3">
-            <div class="flex first-member flex-col justify-center items-center">
+        <div
+            class="parent-testimonials flex justify-center items-center flex-col rounded-[20px] bg-[#FBFBFB] mt-3 gap-y-3 md:flex-row md:justify-between ">
+            <div class="flex first-member flex-col justify-center items-center md:w-[261px]">
 
                 <div class="my-2 h-20 w-20 rounded-[50%] flex justify-center items-center">
                     <img src="images/image copy.png" alt="" class="w-full h-full rounded-[50%] text-center">
                 </div>
 
-                <h3 class="my-[6px] font-medium leading-normal text-[18px] font-gilroysemibold">Conref Pvt. Ltd.</h3>
+                <h3 class="my-[6px] font-medium leading-normal text-[18px] font-gilroysemibold md:text-[25px]">Conref
+                    Pvt. Ltd.</h3>
 
-                <p class="text-center mt-[6px] mx-2 text-[14px] font-gilroyregular">Deepak is Hardworking, Punctual and
+                <p class="text-center mt-[6px] mx-2 text-[19px] font-gilroyregular md:text-[16px] ">Deepak is Hardworking, Punctual and
                     Committed in carrying
                     out his assignments. During his intership he projected a lot
                     of insight, has been an avaid problem_solver and demonstrated creativity at every juncture.</p>
             </div>
 
-            <div class="mt-3 flex first-member flex-col justify-center items-center">
+            <div class="flex first-member flex-col justify-center items-center md:mt-2 md:w-[261px]">
 
                 <div class="my-2 h-20 w-20 rounded-[50%] flex justify-center items-center">
                     <img src="images/image.png" alt="Vikram Sandhu Sir" class="w-full h-full rounded-[50%] text-center">
                 </div>
 
-                <h3 class="my-[6px] font-medium leading-normal text-[18px] font-gilroysemibold">Capt. Vikram Sandhu</h3>
+                <h3 class="my-[6px] font-medium leading-normal text-[18px] font-gilroysemibold md:text-[25px]">Capt.
+                    Vikram Sandhu</h3>
 
-                <p class="text-center mt-[6px] mx-2 text-[14px] font-gilroyregular">The “Website Development” project in
-                    your internship was challenging, with a heavy workload. Not many are able to
-                    perform well. However, you have done quite well. You have been exceptionally creative, responsible,
-                    hard-working and
-                    very dependable. You have turned in good quality work. We are much impressed with your ingenuity -
-                    at every juncture,
-                    and out-of-the-box solutions. We appreciate the efforts that you have put in.</p>
+                <p class="text-center mt-[6px] mx-2 text-[19px] font-gilroyregular md:text-[16px]">The “Website Development” project
+                    was challenging, but Deepak performed exceptionally well. His creativity,
+                    responsibility, hard work, and dependability have impressed us. We appreciate his ingenuity and
+                    efforts.</p>
             </div>
         </div>
     </section>
 
     <!-- Services -->
-    <section id="services" class="services mt-14 mx-3">
-        <h2 class="text-center font-medium leading-normal heading-text font-gilroysemibold heading-color">Services</h2>
-        <div class="flex flex-col mt-3 rounded-md bg-[#F3F3F3]">
+    <section id="services" class="services mt-14 mx-3 md:mx-5">
+        <h2
+            class="text-center font-medium leading-normal heading-text font-gilroysemibold heading-color md:text-[40px]">
+            Services</h2>
+        <div class="flex flex-col mt-3 rounded-md bg-[#F3F3F3] md:flex-row md:justify-center gap-x-7">
             <div
-                class="service-div flex justify-center items-center text-center flex-col transition duration-300 ease-in-out hover:bg-[#0039A6] hover:text-yellow-200 text-[18px] font-normal leading-normal rounded-md py-[12px]">
+                class="service-div flex justify-center items-center text-center flex-col transition duration-300 ease-in-out hover:bg-[#0039A6] hover:text-yellow-200 text-[18px] font-normal leading-normal rounded-md py-[12px] md:px-3 md:my-3">
 
                 <i class="fa-solid fa-laptop-code transition duration-150 ease-in-out  text-[67px]"></i>
 
-                <h3 class="transition duration-150 ease-in-out font-gilroysemibold heading-color">Website Development
+                <h3 class="transition duration-150 ease-in-out font-gilroysemibold heading-color md:mt-3">Website
+                    Development
                 </h3>
             </div>
 
             <div
-                class="service-div flex justify-center items-center text-center flex-col transition duration-300 ease-in-out hover:bg-[#0039A6] hover:text-yellow-200 text-[18px] font-normal leading-normal rounded-md my-3 py-[12px]">
+                class="service-div flex justify-center items-center text-center flex-col transition duration-300 ease-in-out hover:bg-[#0039A6] hover:text-yellow-200 text-[18px] font-normal leading-normal rounded-md my-3 py-[12px] md:px-3">
 
                 <i class="fa-regular fa-pen-to-square transition duration-150 ease-in-out  text-[67px]"></i>
 
-                <h3 class="transition duration-150 ease-in-out font-gilroysemibold heading-color">Web Content Writer
+                <h3 class="transition duration-150 ease-in-out font-gilroysemibold heading-color md:mt-3">Web Content
+                    Writer
                 </h3>
+            </div>
+
+            <div
+                class="service-div flex justify-center items-center text-center flex-col transition duration-300 ease-in-out hover:bg-[#0039A6] hover:text-yellow-200 text-[18px] font-normal leading-normal rounded-md my-3 py-[12px] md:px-3">
+
+                <i class="fa-solid fa-bug transition duration-150 ease-in-out text-[67px]"></i>
+
+                <h3 class="transition duration-150 ease-in-out font-gilroysemibold heading-color md:mt-3">Code Bug
+                    Fixing</h3>
             </div>
 
             <div
                 class="service-div flex justify-center items-center text-center flex-col transition duration-300 ease-in-out hover:bg-[#0039A6] hover:text-yellow-200 text-[18px] font-normal leading-normal rounded-md my-3 py-[12px]">
 
-                <i class="fa-solid fa-bug transition duration-150 ease-in-out  text-[67px]"></i>
-
-                <h3 class="transition duration-150 ease-in-out font-gilroysemibold heading-color">Code Bug Fixing</h3>
-            </div>
-
-            <div
-                class="service-div flex justify-center items-center text-center flex-col transition duration-300 ease-in-out hover:bg-[#0039A6] hover:text-yellow-200 text-[18px] font-normal leading-normal rounded-md my-3 pt-[12px]">
-
                 <i class="fa-solid fa-file-excel transition duration-150 ease-in-out  text-[67px]"></i>
 
-                <h3 class="transition duration-150 ease-in-out font-gilroysemibold heading-color">Excel Data Entry</h3>
+                <h3 class="transition duration-150 ease-in-out font-gilroysemibold heading-color md:mt-3">Excel Data
+                    Entry</h3>
             </div>
         </div>
     </section>
 
     <!-- Mini Projects -->
-    <div id="default-carousel" class="mt-14 relative mx-3" data-carousel="slide">
-        <h2 class="text-center font-medium leading-normal heading-text font-gilroysemibold heading-color">Some mini projects
+    <div id="default-carousel" class="mt-14 relative mx-3 md:mx-5" data-carousel="slide">
+        <h2
+            class="text-center font-medium leading-normal heading-text font-gilroysemibold heading-color md:text-[40px]">
+            Some mini
+            projects
         </h2>
         <!-- Carousel wrapper -->
         <div class="relative h-[250px] overflow-hidden md:h-96 z-0 rounded-[20px] mt-3">
@@ -290,7 +316,7 @@
             <!-- Item 3 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
 
-                <a href="https://vercel.com/deepak-patels-projects/deepak-original-giphy-app" target="_blank">
+                <a href="https://deepak-original-giphy-app.vercel.app/" target="_blank">
                     <img src="images/carousel-3.png" alt="giphy app"
                         class="absolute block w-full h-full  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
                 </a>
@@ -333,34 +359,43 @@
     </div>
 
     <!-- Major Project -->
-    <section class="mt-8 mx-3">
-        <h2 class="text-center heading-text font-medium leading-normal font-gilroysemibold heading-color" id="services">
+    <section class="mt-8 mx-3 md:mx-5">
+        <h2 class="text-center heading-text font-medium leading-normal font-gilroysemibold heading-color md:text-[40px]"
+            id="services">
             Project Which I
             worked on</h2>
         <div class="flex justify-center items-center flex-col mt-3">
             <img src="images/hotel image.png" alt="Hotel Image" class="w-full">
-            <h2 class="self-start text-2xl font-medium leading-normal my-3 font-gilroysemibold heading-color ">Hotel
+            <h2
+                class="self-start text-2xl font-medium leading-normal my-3 font-gilroysemibold heading-color md:text-[30px]">
+                Hotel
                 Management
                 System</h2>
-            <p class="paragraph-color font-medium leading-normal font-gilroyregular text-[16px]">Designed a system
+            <p class="paragraph-color font-medium leading-normal font-gilroyregular text-[16px] md:text-[20px]">Designed
+                a system
                 for locating hotels
                 in specific regions, allowing users to review and search based on price ranges,
                 with separate control panel for admins and customers.</p>
-            <div class="w-full flex justify-start items-start mt-3 font-gilroyregular gap-x-[6px]">
-                <button class="rounded-[50px] skill-btn text-white py-2 px-[5px]">Node.js</button>
-                <button class="rounded-[50px] skill-btn text-white py-2 px-[5px]">React.js</button>
-                <button class="rounded-[50px] skill-btn text-white py-2 px-[5px]">MongoDB</button>
-                <button class="rounded-[50px] skill-btn text-white py-2 px-[5px]">Tailwind</button>
+            <div class="w-full flex justify-start items-start mt-3 font-gilroyregular gap-x-[6px] md:mt-4">
+                <button
+                    class="rounded-[50px] skill-btn text-white py-2 px-[5px] md:text-[20px] md:px-5 ">Node.js</button>
+                <button
+                    class="rounded-[50px] skill-btn text-white py-2 px-[5px] md:text-[20px] md:px-5">React.js</button>
+                <button
+                    class="rounded-[50px] skill-btn text-white py-2 px-[5px] md:text-[20px] md:px-5">MongoDB</button>
+                <button
+                    class="rounded-[50px] skill-btn text-white py-2 px-[5px] md:text-[20px] md:px-5">Tailwind</button>
             </div>
         </div>
     </section>
 
     <!-- Contact Details -->
-    <section class="mt-14 mx-3">
-        <h2 class="font-medium text-2xl leading-normal text-center font-gilroysemibold heading-color">Contact Me</h2>
+    <section class="mt-14 mx-3 md:mx-5">
+        <h2 class="font-medium text-2xl leading-normal text-center font-gilroysemibold heading-color md:text-[40px]">
+            Contact Me</h2>
         <div class="flex items-center flex-col mt-3">
-            <p class="text-[12px] leading-normal font-medium font-gilroymedium heading-color">Email</p>
-            <h3 class="text-sm leading-normal font-medium font-gilroysemibold mt-2 heading-color"><a
+            <p class="text-[12px] leading-normal font-medium font-gilroymedium heading-color md:text-[20px]">Email</p>
+            <h3 class="text-sm leading-normal font-medium font-gilroysemibold mt-2 heading-color md:text-[30px]"><a
                     href="mailto: deepakkurmiofficial@gmail.com">
                     deepakkurmiofficial@gmail.com
                 </a></h3>
@@ -368,10 +403,16 @@
     </section>
 
     <!-- footer -->
-    <footer class="mt-3 mx-3 mb-2 text-center">
-        <h2 class="text-[14px] leading-normal font-medium font-gilroysemibold heading-color"><i>DP</i></h2>
-        <p class="text-[12px] leading-normal font-medium font-gilroymedium heading-color">All Rights are reserved @<span
-                class="year"></span></p>
+    <footer class="mt-3 mx-3 mb-2 md:mx-5 md:text-start">
+        <div
+            class="flex flex-col justify-center items-center">
+            <h2 class="text-[14px] leading-normal font-medium font-gilroybold heading-color md:text-[22px]">
+                <i>DP</i>
+            </h2>
+            <p class="text-[12px] leading-normal font-medium font-gilroymedium heading-color md:text-[20px] md:mx-2">
+                All Rights
+                are reserved @<span class="year"></span></p>
+        </div>
     </footer>
 
 

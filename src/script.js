@@ -3,19 +3,19 @@ const openMenu = document.querySelector('.open');
 const closeMenu = document.querySelector('.close');
 const navbarLists = document.querySelector('.nav-list');
 
-const activeMenu = document.querySelector('.allMenus')
+const activeMenu = document.querySelector('.allMenus');
 const allList = document.querySelectorAll('.block');
 
 openMenu.addEventListener('click', () => {
-    navbarLists.style.display = "block";
-    closeMenu.style.display = 'block'
-    openMenu.style.display = 'none'
+    navbarLists.style.display = 'block';
+    closeMenu.style.display = 'block';
+    openMenu.style.display = 'none';
     setTimeout(() => {
         activeMenu.classList.add('show');
     }, 10);
-})
+});
 
-function closeMenuData(){
+function closeMenuData() {
     closeMenu.style.display = 'none';
     openMenu.style.display = 'block';
     activeMenu.classList.remove('show');
@@ -25,16 +25,16 @@ function closeMenuData(){
 }
 
 closeMenu.addEventListener('click', () => {
-    closeMenuData()
+    closeMenuData();
 });
 
 allList.forEach((link) => {
     link.addEventListener('click', () => {
-        closeMenuData()
+        if (window.matchMedia('(max-width: 767px)').matches) {
+            closeMenuData();
+        }
     });
 });
 
-
-
-const date = new Date()
-yearSpan.innerHTML = date.getFullYear()
+const date = new Date();
+yearSpan.innerHTML = date.getFullYear();

@@ -100,6 +100,10 @@ nav {
     display: none;
 }
 
+.list-visibility-device{
+    display: block;
+}
+
 .main {
     background: radial-gradient(
         50% 50% at 50% 50%,
@@ -115,4 +119,15 @@ nav {
         rgba(255, 255, 255, 0.3) 25.3%,
         rgba(11, 32, 222, 0.3) 100%
     );
+}
+
+@media screen and  (min-width: 768px) {
+    .navbar .allMenus{
+        max-height: 40px;
+    }
+
+    .navbar .allMenus ul li {
+        border-radius: 10px;
+        padding: 4px 6px;
+    }
 }
