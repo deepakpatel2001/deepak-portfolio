@@ -112,6 +112,10 @@ nav {
     );
 }
 
+.desk-view-image{
+    display: none;
+}
+
 .experience-background-color {
     background: radial-gradient(
         191.98% 141.42% at 0% 0%,
