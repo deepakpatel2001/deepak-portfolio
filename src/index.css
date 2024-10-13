@@ -130,7 +130,7 @@ nav {
 }
 
 .hero-section{
-    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 57, 166, 0.2) 0%, rgba(255, 255, 255, 0.00) 100%);
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 57, 166, 0.15) 0%, rgba(255, 255, 255, 0.00) 100%);
 }
 
 @media screen and (min-width: 768px) {
