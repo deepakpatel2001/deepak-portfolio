@@ -47,7 +47,7 @@
     background-color: var(--dark-skill-btn);
 }
 
-.heading-text{
+.heading-text {
     font-size: 28px;
 }
 
@@ -100,7 +100,7 @@ nav {
     display: none;
 }
 
-.list-visibility-device{
+.list-visibility-device {
     display: block;
 }
 
@@ -112,8 +112,12 @@ nav {
     );
 }
 
-.desk-view-image{
+.desk-view-image {
     display: none;
+}
+
+.btn-connect {
+    width: 100%;
 }
 
 .experience-background-color {
@@ -125,9 +129,13 @@ nav {
     );
 }
 
-@media screen and  (min-width: 768px) {
-    .navbar .allMenus{
+@media screen and (min-width: 768px) {
+    .navbar .allMenus {
         max-height: 40px;
+    }
+
+    .btn-connect {
+        width: 294px;
     }
 
     .navbar .allMenus ul li {

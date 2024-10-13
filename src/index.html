@@ -20,7 +20,7 @@
     <!-- Navbar -->
     <nav class="h-[70px] flex justify-between p-[15px] items-center navbar top-0 border-2 md:fixed">
         <div class="nav-left-image">
-            <img src="images/profileImage.jpg" alt="deepak patel" class="h-14 w-14 mix-blend-darken">
+            <img src="images/profileImage.jpg" alt="deepak patel" class="h-14 w-14 mix-blend-multiply">
         </div>
         <div class="nav-right-menu relative md:hidden">
             <div>
@@ -33,62 +33,87 @@
 
 
             <ul class="lists h-full md:flex md:items-center md:justify-center md:h-full md:visible md:py-3">
-                <li class="my-2 hover-list md:mx-2"><a href="#skills" class="block ">Skills</a></li>
+                <li class="my-2 hover-list md:mx-2"><a href="#skills" class="block font-gilroymedium">Skills</a></li>
 
-                <li class="hover-list md:mx-2"><a href="#default-carousel" class="block ">Projects</a></li>
+                <li class="hover-list md:mx-2"><a href="#default-carousel" class="block font-gilroymedium">Projects</a>
+                </li>
 
-                <li class="my-2 hover-list md:mx-2"><a href="#services" class="block ">Services</a></li>
+                <li class="my-2 hover-list md:mx-2"><a href="#services" class="block font-gilroymedium">Services</a>
+                </li>
 
-                <li class="hover-list md:mx-2"><a href="#" class="block ">Resume</a> </li>
+                <li class="hover-list md:mx-2"><a href="#" class="block font-gilroymedium">Resume</a> </li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero section -->
-    <main class="mt-24 items-center text-center mx-3 flex flex-col justify-center main md:mx-16 lg:h-dvh">
+    <main
+        class="mt-24 items-center text-center mx-3 flex flex-col justify-center main md:mx-16 lg:h-dvh lg:mt-0 lg:mx-8">
 
-        <div class="inner-main-div md:flex md:justify-center md:items-center md:flex-col">
-            <button
-                class="rounded-full online active-bg-color text-white py-2 px-5 font-medium text-[10px] leading-3 text-center active-bg-color font-gilroyregular nav-text-color md:text-[14px]">Available
-                For Work</button>
-
-            <h2
-                class="font-medium text-[36px] leading-[30px] mt-6 font-gilroybold heading-color md:text-[70px] md:leading-[60px]">
-                Hello, I'm <br>Deepak
-                Patel </h2>
-
-            <p
-                class="text-xl font-medium leading-5 mt-6 text-center paragraph-color my-[10px] font-gilroyregular md:text-[25px]">
-                A
-                <span id="type-changer"></span>
-            </p>
-            <p
-                class="text-[12px] py-[10px] font-medium leading-4 text-center paragraph-color font-gilroyregular md:text-[20px] md:leading-6 md:text-justify">
-                I am a
-                passionate software
-                developer with a strong analytical mindset, I have <b>6-months</b> of industry level experience, I
-                worked with Conref Pvt. Ltd, Indore as <b>frontend developer</b> from June 2022 to July 2022 and i had
-                pleasure working with
-                HagnoSoft Tech. Pvt. Ltd., Bangalore as <b>React.js developer</b> from January 2023 to June 2023.</p>
-
-            <div class="flex items-center justify-center text-center gap-5 w-full py-[10px]">
-                <a href="https://www.linkedin.com/in/dev-deepak-patel/" target="_blank"><img src="images/linkedin.png"
-                        alt="linkedin" class="md:h-6 md:w-6"></a>
-
-                <a href="https://github.com/deepakpatel2001" target="_blank"><img src="images/github.png" alt="github"
-                        class="md:h-6 md:w-6"></a>
-
-                <a href="https://t.me/deepakpatel01" target="_blank"><img src="images/telegram.png" alt="telegram"
-                        class="md:h-6 md:w-6"></a>
+        <div class="inner-main-div md:flex md:justify-between md:items-center md:flex-col lg:flex-row">
+            <div class="hidden left-desk-div lg:flex flex-col">
+                <div class="left-top h-[90px] flex justify-end left-desk-div-image">
+                    <img src="images/desk-topleft.png" alt="animation element" class="w-[90px] h-[90px]">
+                </div>
+                <div class="left-bottom w-[320px] h-[320px] flex justify-end left-desk-div-image">
+                    <img src="images/desk-bottomleft.png" alt="animation element" class="w-[320px] h-[320px]">
+                </div>
             </div>
+            <div class="center-desk-div flex flex-col justify-center items-center lg:w-[780px] lg:h-[419px] lg:p-2">
+                <button
+                    class="rounded-full online active-bg-color text-white py-2 px-5 font-medium text-[10px] leading-3 text-center active-bg-color font-gilroyregular nav-text-color md:text-[14px]">Available
+                    For Work
+                </button>
 
-            <div class="flex justify-center items-center text-center mt-4 md:w-[294px]">
-                <a href="https://www.linkedin.com/in/dev-deepak-patel/"
-                    class="w-full md:w-[294px] h-[49px] rounded-md p-[12px] blue btn-font-color text-center font-normal dark-bg-blue"
-                    target="_blank">Let's Connect</a>
+                <h2
+                    class="font-medium text-[36px] leading-[30px] mt-6 font-gilroybold heading-color md:text-[70px] md:leading-[60px]">
+                    Hello, I'm <br>Deepak
+                    Patel
+                </h2>
+
+                <p
+                    class="text-xl font-medium leading-5 mt-6 text-center paragraph-color my-[10px] font-gilroyregular md:text-[25px]">
+                    A
+                    <span id="type-changer"></span>
+                </p>
+
+                <p
+                    class="text-[12px] py-[10px] font-medium leading-4 text-center paragraph-color font-gilroyregular md:text-[20px] md:leading-6 md:text-justify">
+                    I am a
+                    passionate software
+                    developer with a strong analytical mindset, I have <b>6-months</b> of industry level experience, I
+                    worked with Conref Pvt. Ltd, Indore as <b>frontend developer</b> from June 2022 to July 2022 and i
+                    had
+                    pleasure working with
+                    HagnoSoft Tech. Pvt. Ltd., Bangalore as <b>React.js developer</b> from January 2023 to June 2023.
+                </p>
+
+                <div class="flex items-center justify-center text-center gap-5 w-full py-[10px]">
+                    <a href="https://www.linkedin.com/in/dev-deepak-patel/" target="_blank"><img
+                            src="images/linkedin.png" alt="linkedin" class="md:h-6 md:w-6"></a>
+
+                    <a href="https://github.com/deepakpatel2001" target="_blank"><img src="images/github.png"
+                            alt="github" class="md:h-6 md:w-6"></a>
+
+                    <a href="https://t.me/deepakpatel01" target="_blank"><img src="images/telegram.png" alt="telegram"
+                            class="md:h-6 md:w-6"></a>
+                </div>
+
+                <button class="btn-connect text-center rounded-md md:flex md:justify-center md:items-center mt-4">
+                    <a href="https://www.linkedin.com/in/dev-deepak-patel/"
+                        class="w-full rounded-md p-[12px] btn-font-color text-center font-normal dark-bg-blue block md:inline"
+                        target="_blank">Contact Me</a>
+                </button>
+
+                <!-- <div class="flex justify-center items-center text-center mt-4 md:w-[294px]">
+                    <a href="https://www.linkedin.com/in/dev-deepak-patel/"
+                        class="w-full md:w-[294px] h-[49px] rounded-md p-[12px] connect-button btn-font-color text-center font-normal dark-bg-blue"
+                        target="_blank">Let's Connect</a>
+                </div> -->
             </div>
-
-            <!-- <button class="rounded-md p-4 bg-[#0039A6] text-[#FCF6F5] w-full my-4">Let's Connect</button> -->
+            <div class="hidden right-desk-div lg:block w-[200px] h-[200px] self-start">
+                <img src="images/desk-topright.png" alt="animation element" class="h-[200px] w-[200px]">
+            </div>
         </div>
 
     </main>
@@ -100,7 +125,8 @@
         <div class="desk-view lg:flex lg:gap-x-8">
             <div class="self-image-box rounded-[30px] mt-3">
                 <img src="images/self-image.png" alt="my photo" class="w-full h-full lg:hidden">
-                <img src="images/desk-view-image.png" alt="desk-view image" class="sm:hidden md:hidden lg:block lg:w-[500px] lg:h-[170px] desk-view-image">
+                <img src="images/desk-view-image.png" alt="desk-view image"
+                    class="sm:hidden md:hidden lg:block lg:w-[500px] lg:h-[170px] desk-view-image">
             </div>
             <div class="desk-view-content">
                 <p class="text-justify mt-3 mx-1 font-gilroyregular heading-color text-[14px] md:text-[20px]">My name is
@@ -116,7 +142,8 @@
                     because of my Adaptability. I enjoy coding.
                 </p>
 
-                <div class="w-full my-4 flex flex-col md:flex-row md:mt-4 md:justify-center md:items-center lg:items-start lg:justify-start">
+                <div
+                    class="w-full my-4 flex flex-col md:flex-row md:mt-4 md:justify-center md:items-center lg:items-start lg:justify-start">
                     <button class="text-center rounded-md">
                         <a href="tel:+919098343002"
                             class="w-full rounded-md p-[12px] btn-font-color text-center font-normal dark-bg-blue block md:inline"
@@ -259,13 +286,16 @@
         <h2
             class="text-center font-medium leading-normal heading-text font-gilroysemibold heading-color md:text-[40px]">
             Services</h2>
-        <div class="flex flex-col mt-3 rounded-md bg-[#F3F3F3] md:flex-row md:justify-center gap-x-7 lg:justify-between">
+        <div
+            class="flex flex-col mt-3 rounded-md bg-[#F3F3F3] md:flex-row md:justify-center gap-x-7 lg:justify-between">
             <div
                 class="service-div flex justify-center items-center text-center flex-col transition duration-300 ease-in-out hover:bg-[#0039A6] hover:text-yellow-200 text-[18px] font-normal leading-normal rounded-md py-[12px] md:px-3 md:my-3">
 
                 <i class="fa-solid fa-laptop-code transition duration-150 ease-in-out text-[67px]"></i>
 
-                <h3 class="transition duration-150 ease-in-out font-gilroysemibold heading-color md:mt-3 lg:text-[30px]">Website
+                <h3
+                    class="transition duration-150 ease-in-out font-gilroysemibold heading-color md:mt-3 lg:text-[30px]">
+                    Website
                     Development
                 </h3>
             </div>
@@ -275,7 +305,9 @@
 
                 <i class="fa-regular fa-pen-to-square transition duration-150 ease-in-out text-[67px]"></i>
 
-                <h3 class="transition duration-150 ease-in-out font-gilroysemibold heading-color md:mt-3 lg:text-[30px]">Web Content
+                <h3
+                    class="transition duration-150 ease-in-out font-gilroysemibold heading-color md:mt-3 lg:text-[30px]">
+                    Web Content
                     Writer
                 </h3>
             </div>
@@ -285,7 +317,9 @@
 
                 <i class="fa-solid fa-bug transition duration-150 ease-in-out text-[67px]"></i>
 
-                <h3 class="transition duration-150 ease-in-out font-gilroysemibold heading-color md:mt-3 lg:text-[30px]">Code Bug
+                <h3
+                    class="transition duration-150 ease-in-out font-gilroysemibold heading-color md:mt-3 lg:text-[30px]">
+                    Code Bug
                     Fixing</h3>
             </div>
 
@@ -294,14 +328,17 @@
 
                 <i class="fa-solid fa-file-excel transition duration-150 ease-in-out  text-[67px]"></i>
 
-                <h3 class="transition duration-150 ease-in-out font-gilroysemibold heading-color md:mt-3 lg:text-[30px]">Excel Data
+                <h3
+                    class="transition duration-150 ease-in-out font-gilroysemibold heading-color md:mt-3 lg:text-[30px]">
+                    Excel Data
                     Entry</h3>
             </div>
         </div>
     </section>
 
     <!-- Mini Projects -->
-    <div id="default-carousel" class="mt-14 relative mx-3 md:mx-5 lg:flex lg:justify-center lg:items-center lg:flex-col" data-carousel="slide">
+    <div id="default-carousel" class="mt-14 relative mx-3 md:mx-5 lg:flex lg:justify-center lg:items-center lg:flex-col"
+        data-carousel="slide ">
         <h2
             class="text-center font-medium leading-normal heading-text font-gilroysemibold heading-color md:text-[40px]">
             Some mini
@@ -376,7 +413,8 @@
             id="services">
             Project which I
             worked on</h2>
-        <div class="flex justify-center items-center flex-col mt-3 lg:flex-row lg:gap-x-9 lg:justify-start lg:items-start lg:mt-8">
+        <div
+            class="flex justify-center items-center flex-col mt-3 lg:flex-row lg:gap-x-9 lg:justify-start lg:items-start lg:mt-8">
             <div class="hotel-image-container self-start w-full">
                 <img src="images/hotel image.png" alt="Hotel Image" class="w-full lg:hidden">
                 <img src="images/desk-view-hotel.png" alt="Hotel Image" class="lg:block hidden">
@@ -384,25 +422,26 @@
 
             <div class="hotel-details-container lg:flex lg:flex-col lg:self-start">
                 <h2
-                class="self-start text-2xl font-medium leading-normal my-3 font-gilroysemibold heading-color md:text-[30px] lg:self-start">
-                Hotel
-                Management
-                System</h2>
-            <p class="paragraph-color font-medium leading-normal font-gilroyregular text-[16px] md:text-[20px]">Designed
-                a system
-                for locating hotels
-                in specific regions, allowing users to review and search based on price ranges,
-                with separate control panel for admins and customers.</p>
-            <div class="w-full flex justify-start items-start mt-3 font-gilroyregular gap-x-[6px] md:mt-4">
-                <button
-                    class="rounded-[50px] skill-btn text-white py-2 px-[5px] md:text-[20px] md:px-5 ">Node.js</button>
-                <button
-                    class="rounded-[50px] skill-btn text-white py-2 px-[5px] md:text-[20px] md:px-5">React.js</button>
-                <button
-                    class="rounded-[50px] skill-btn text-white py-2 px-[5px] md:text-[20px] md:px-5">MongoDB</button>
-                <button
-                    class="rounded-[50px] skill-btn text-white py-2 px-[5px] md:text-[20px] md:px-5">Tailwind</button>
-            </div>
+                    class="self-start text-2xl font-medium leading-normal my-3 font-gilroysemibold heading-color md:text-[30px] lg:self-start">
+                    Hotel
+                    Management
+                    System</h2>
+                <p class="paragraph-color font-medium leading-normal font-gilroyregular text-[16px] md:text-[20px]">
+                    Designed
+                    a system
+                    for locating hotels
+                    in specific regions, allowing users to review and search based on price ranges,
+                    with separate control panel for admins and customers.</p>
+                <div class="w-full flex justify-start items-start mt-3 font-gilroyregular gap-x-[6px] md:mt-4">
+                    <button
+                        class="rounded-[50px] skill-btn text-white py-2 px-[5px] md:text-[20px] md:px-5 ">Node.js</button>
+                    <button
+                        class="rounded-[50px] skill-btn text-white py-2 px-[5px] md:text-[20px] md:px-5">React.js</button>
+                    <button
+                        class="rounded-[50px] skill-btn text-white py-2 px-[5px] md:text-[20px] md:px-5">MongoDB</button>
+                    <button
+                        class="rounded-[50px] skill-btn text-white py-2 px-[5px] md:text-[20px] md:px-5">Tailwind</button>
+                </div>
             </div>
         </div>
     </section>
