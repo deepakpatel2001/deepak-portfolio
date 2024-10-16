@@ -13,7 +13,13 @@
 
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
     <script src="script.js" defer></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 </head>
 
 <body>
@@ -33,30 +39,36 @@
 
 
             <ul class="lists h-full md:flex md:items-center md:justify-center md:h-full md:visible md:py-3">
-                <li class="my-2 hover-list md:mx-2"><a href="#skills" class="block font-gilroymedium">Skills</a></li>
+                <li class="my-2 hover-list md:mx-2"><a href="#skills" class="block font-gilroyregular">Skills</a></li>
 
-                <li class="hover-list md:mx-2"><a href="#default-carousel" class="block font-gilroymedium">Projects</a>
+                <li class="hover-list md:mx-2"><a href="#default-carousel" class="block font-gilroyregular">Projects</a>
                 </li>
 
-                <li class="my-2 hover-list md:mx-2"><a href="#services" class="block font-gilroymedium">Services</a>
+                <li class="my-2 hover-list md:mx-2"><a href="#services" class="block font-gilroyregular">Services</a>
                 </li>
 
-                <li class="hover-list md:mx-2"><a href="#" class="block font-gilroymedium">Resume</a> </li>
+                <li class="hover-list md:mx-2"><a href="#" class="block font-gilroyregular">Resume</a> </li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero section -->
     <main
-        class="mt-24 items-center text-center mx-3 flex flex-col justify-center main md:mx-16 lg:h-dvh lg:mt-0 lg:mx-8 hero-section">
+        class="mt-24 items-center text-center mx-3 flex flex-col justify-center main md:mx-16 lg:h-dvh lg:mx-4 hero-section lg:mt-16">
 
         <div class="inner-main-div md:flex md:justify-between md:items-center md:flex-col lg:flex-row">
-            <div class="hidden left-desk-div lg:flex flex-col">
-                <div class="left-top h-[90px] flex justify-end left-desk-div-image">
+            <div class="hidden left-desk-div lg:flex flex-col relative">
+                <div
+                    class="floating left-top w-[90px] h-[90px] flex justify-end left-desk-div-image absolute -top-[300px] -right-[80px]">
                     <img src="images/desk-topleft.png" alt="animation element" class="w-[90px] h-[90px]">
                 </div>
-                <div class="left-bottom w-[320px] h-[320px] flex justify-end left-desk-div-image">
+                <div
+                    class="floating left-bottom w-[320px] h-[320px] flex justify-end left-desk-div-image absolute lg:-left-64 lg:top-4">
                     <img src="images/desk-bottomleft.png" alt="animation element" class="w-[320px] h-[320px]">
+                </div>
+                <div
+                    class="floating hidden right-desk-div lg:block w-[200px] h-[200px] self-start absolute -top-[340px] -right-[990px]">
+                    <img src="images/desk-topright.png" alt="animation element" class="h-[200px] w-[200px]">
                 </div>
             </div>
             <div class="center-desk-div flex flex-col justify-center items-center lg:w-[780px] lg:h-[419px] lg:p-2">
@@ -67,8 +79,7 @@
 
                 <h2
                     class="font-medium text-[36px] leading-[30px] mt-6 font-gilroybold heading-color md:text-[70px] md:leading-[60px]">
-                    Hello, I'm <br>Deepak
-                    Patel
+                    Hello, I'm <span class="block md:inline">Deepak Patel</span>
                 </h2>
 
                 <p
@@ -111,9 +122,6 @@
                         target="_blank">Let's Connect</a>
                 </div> -->
             </div>
-            <div class="hidden right-desk-div lg:block w-[200px] h-[200px] self-start">
-                <img src="images/desk-topright.png" alt="animation element" class="h-[200px] w-[200px]">
-            </div>
         </div>
 
     </main>
@@ -126,10 +134,10 @@
             <div class="self-image-box rounded-[30px] mt-3">
                 <img src="images/self-image.png" alt="my photo" class="w-full h-full lg:hidden">
                 <img src="images/desk-view-image.png" alt="desk-view image"
-                    class="sm:hidden md:hidden lg:block lg:w-[500px] lg:h-[170px] desk-view-image">
+                    class="sm:hidden md:hidden lg:block lg:w-[700px] lg:h-[238px] desk-view-image">
             </div>
             <div class="desk-view-content">
-                <p class="text-justify mt-3 mx-1 font-gilroyregular heading-color text-[14px] md:text-[20px]">My name is
+                <p class="text-justify mt-3 mx-1 font-gilroyregular heading-color text-[16px] md:text-[20px]">My name is
                     Deepak
                     Patel and I'm
                     from Vidisha
@@ -143,7 +151,7 @@
                 </p>
 
                 <div
-                    class="w-full my-4 flex flex-col md:flex-row md:mt-4 md:justify-center md:items-center lg:items-start lg:justify-start">
+                    class="w-full my-4 flex flex-col md:flex-row md:mt-4 md:justify-center md:items-center lg:items-start lg:justify-start lg:mt-10">
                     <button class="text-center rounded-md">
                         <a href="tel:+919098343002"
                             class="w-full rounded-md p-[12px] btn-font-color text-center font-normal dark-bg-blue block md:inline"
@@ -289,123 +297,115 @@
         <div
             class="flex flex-col mt-3 rounded-md bg-[#F3F3F3] md:flex-row md:justify-center gap-x-7 lg:justify-between">
             <div
-                class="service-div flex justify-center items-center text-center flex-col transition duration-300 ease-in-out hover:bg-[#0039A6] hover:text-yellow-200 text-[18px] font-normal leading-normal rounded-md py-[12px] md:px-3 md:my-3">
+                class="service-div flex justify-center items-center text-center flex-col transition duration-300 ease-in-out hover:bg-[#0039A6] hover:text-yellow-200 text-[18px] font-normal leading-normal rounded-md py-[12px] md:px-3 md:my-3 group">
 
-                <i class="fa-solid fa-laptop-code transition duration-150 ease-in-out text-[67px]"></i>
+                <i
+                    class="fa-solid fa-laptop-code transition duration-150 ease-in-out text-[67px] group-hover:text-yellow-200"></i>
 
                 <h3
-                    class="transition duration-150 ease-in-out font-gilroysemibold heading-color md:mt-3 lg:text-[30px]">
+                    class="transition duration-150 ease-in-out heading-color md:mt-3
+                    font-medium leading-normal text-[18px] font-gilroysemibold md:text-[25px] group-hover:text-yellow-200">
                     Website
                     Development
                 </h3>
             </div>
 
             <div
-                class="service-div flex justify-center items-center text-center flex-col transition duration-300 ease-in-out hover:bg-[#0039A6] hover:text-yellow-200 text-[18px] font-normal leading-normal rounded-md my-3 py-[12px] md:px-3">
+                class="service-div flex justify-center items-center text-center flex-col transition duration-300 ease-in-out hover:bg-[#0039A6] hover:text-yellow-200 text-[18px] font-normal leading-normal rounded-md my-3 py-[12px] md:px-3 group">
 
-                <i class="fa-regular fa-pen-to-square transition duration-150 ease-in-out text-[67px]"></i>
+                <i
+                    class="fa-regular fa-pen-to-square transition duration-150 ease-in-out text-[67px] group-hover:text-yellow-200"></i>
 
                 <h3
-                    class="transition duration-150 ease-in-out font-gilroysemibold heading-color md:mt-3 lg:text-[30px]">
+                    class="transition duration-150 ease-in-out heading-color md:mt-3
+                    font-medium leading-normal text-[18px] font-gilroysemibold md:text-[25px] group-hover:text-yellow-200">
                     Web Content
                     Writer
                 </h3>
             </div>
 
             <div
-                class="service-div flex justify-center items-center text-center flex-col transition duration-300 ease-in-out hover:bg-[#0039A6] hover:text-yellow-200 text-[18px] font-normal leading-normal rounded-md my-3 py-[12px] md:px-3">
+                class="service-div flex justify-center items-center text-center flex-col transition duration-300 ease-in-out hover:bg-[#0039A6] hover:text-yellow-200 text-[18px] font-normal leading-normal rounded-md my-3 py-[12px] md:px-3 group">
 
-                <i class="fa-solid fa-bug transition duration-150 ease-in-out text-[67px]"></i>
+                <i
+                    class="fa-solid fa-bug transition duration-150 ease-in-out text-[67px] group-hover:text-yellow-200"></i>
 
                 <h3
-                    class="transition duration-150 ease-in-out font-gilroysemibold heading-color md:mt-3 lg:text-[30px]">
+                    class="transition duration-150 ease-in-out heading-color md:mt-3
+                    font-medium leading-normal text-[18px] font-gilroysemibold md:text-[25px] group-hover:text-yellow-200">
                     Code Bug
                     Fixing</h3>
             </div>
 
             <div
-                class="service-div flex justify-center items-center text-center flex-col transition duration-300 ease-in-out hover:bg-[#0039A6] hover:text-yellow-200 text-[18px] font-normal leading-normal rounded-md my-3 py-[12px] md:px-3">
+                class="service-div flex justify-center items-center text-center flex-col transition duration-300 ease-in-out hover:bg-[#0039A6] text-[18px] font-normal leading-normal rounded-md my-3 py-[12px] md:px-3 group">
 
-                <i class="fa-solid fa-file-excel transition duration-150 ease-in-out  text-[67px]"></i>
+                <i
+                    class="fa-solid fa-file-excel transition duration-150 ease-in-out text-[67px] group-hover:text-yellow-200"></i>
 
                 <h3
-                    class="transition duration-150 ease-in-out font-gilroysemibold heading-color md:mt-3 lg:text-[30px]">
-                    Excel Data
-                    Entry</h3>
+                    class="transition duration-300 ease-in-out md:mt-3 font-medium leading-normal text-[18px] font-gilroysemibold md:text-[25px] group-hover:text-yellow-200">
+                    Excel Data Entry
+                </h3>
             </div>
+
+
         </div>
     </section>
 
     <!-- Mini Projects -->
-    <div id="default-carousel" class="mt-14 relative mx-3 md:mx-5 lg:flex lg:justify-center lg:items-center lg:flex-col"
-        data-carousel="slide ">
+    <section class="splide mt-14 mx-3 md:mx-5" aria-label="Splide Basic HTML Example">
         <h2
             class="text-center font-medium leading-normal heading-text font-gilroysemibold heading-color md:text-[40px]">
             Some mini
             projects
         </h2>
-        <!-- Carousel wrapper -->
-        <div class="relative h-[250px] overflow-hidden md:h-96 z-0 rounded-[20px] mt-3 lg:w-[700px]">
-            <!-- Item 1 -->
-            <div class="hidden duration-700 ease-in-out z-0" data-carousel-item>
-
-                <a href="https://conref.in/" target="_blank" class="z-0">
-                    <img src="images/carousel-1.png" alt="conref"
-                        class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-0  h-523" />
-                </a>
-            </div>
-            <!-- Item 2 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-
-                <a href="https://bill-splitter-xi.vercel.app/" target="_blank">
-                    <img src="images/carousel-2.png" alt="bill splitter project"
-                        class="absolute block w-full h-full  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                </a>
-            </div>
-            <!-- Item 3 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-
-                <a href="https://deepak-original-giphy-app.vercel.app/" target="_blank">
-                    <img src="images/carousel-3.png" alt="giphy app"
-                        class="absolute block w-full h-full  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                </a>
-            </div>
-            <!-- Item 4 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <a href="https://dice-game-deepak-patel.vercel.app/" target="_blank">
-                    <img src="images/carousel-4.png" alt="dice game"
-                        class="absolute block w-full h-full  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" />
-                </a>
-            </div>
-            <!-- Item 5 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <a href="https://custom-carousel-beta.vercel.app/" target="_blank">
-                    <img src="images/carousel-5.png" alt="slide project"
-                        class="absolute block w-full h-full  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" />
-                </a>
-            </div>
-
-
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <a href="https://english-meme-jl3spahtv-deepak-patels-projects.vercel.app/" target="_blank">
-                    <img src="images/carousel-6.png" alt="english meme"
-                        class="absolute block w-full h-full  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" />
-                </a>
-            </div>
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <a href="https://testimonials-page-cvuepbk77-deepak-patels-projects.vercel.app/" target="_blank">
-                    <img src="images/carousel-7.png" alt="testimonials"
-                        class="absolute block w-full h-full  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                </a>
-            </div>
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <a href="https://dead-hindi-jokes-deepak-patel.vercel.app/" target="_blank">
-                    <img src="images/carousel-8.png" alt="dead hindi jokes"
-                        class="absolute block w-full h-full  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-                </a>
+        <div class="splide__track rounded-[20px] p-4 ">
+            <div class="splide__list border-2 border-black">
+                <div class="splide__slide rounded-2xl overflow-hidden ">
+                    <a href="https://conref.in/" target="_blank" class="z-0 block">
+                        <img src="images/carousel-1.png" alt="conref" data-splide-lazy="path-to-the-image"
+                            class="" />
+                    </a>
+                </div>
+                <div class="splide__slide rounded-2xl overflow-hidden ">
+                    <a href="https://bill-splitter-xi.vercel.app/" target="_blank" class="z-0 block">
+                        <img src="images/carousel-2.png" alt="conref" data-splide-lazy="path-to-the-image" class="" />
+                    </a>
+                </div>
+                <div class="splide__slide rounded-2xl overflow-hidden ">
+                    <a href="https://deepak-original-giphy-app.vercel.app/" target="_blank" class="z-0 block">
+                        <img src="images/carousel-3.png" alt="conref" data-splide-lazy="path-to-the-image" class="" />
+                    </a>
+                </div>
+                <div class="splide__slide rounded-2xl overflow-hidden ">
+                    <a href="https://dice-game-deepak-patel.vercel.app/" target="_blank" class="z-0 block">
+                        <img src="images/carousel-4.png" alt="conref" data-splide-lazy="path-to-the-image" class="" />
+                    </a>
+                </div>
+                <div class="splide__slide rounded-2xl overflow-hidden ">
+                    <a href="https://custom-carousel-beta.vercel.app/" target="_blank" class="z-0 block">
+                        <img src="images/carousel-5.png" alt="conref" data-splide-lazy="path-to-the-image" class="" />
+                    </a>
+                </div>
+                <div class="splide__slide rounded-2xl overflow-hidden ">
+                    <a href="https://english-meme-jl3spahtv-deepak-patels-projects.vercel.app/" target="_blank" class="z-0 block">
+                        <img src="images/carousel-6.png" alt="conref" data-splide-lazy="path-to-the-image" class="" />
+                    </a>
+                </div>
+                <div class="splide__slide rounded-2xl overflow-hidden ">
+                    <a href="https://testimonials-page-cvuepbk77-deepak-patels-projects.vercel.app/" target="_blank" class="z-0 block">
+                        <img src="images/carousel-7.png" alt="conref" data-splide-lazy="path-to-the-image" class="" />
+                    </a>
+                </div>
+                <div class="splide__slide rounded-2xl overflow-hidden">
+                    <a href="https://dead-hindi-jokes-deepak-patel.vercel.app/" target="_blank" class="z-0 block">
+                        <img src="images/carousel-8.png" alt="conref" data-splide-lazy="path-to-the-image" class="" />
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Major Project -->
     <section class="mt-8 mx-3 md:mx-5">
@@ -451,8 +451,8 @@
         <h2 class="font-medium text-2xl leading-normal text-center font-gilroysemibold heading-color md:text-[40px]">
             Contact Me</h2>
         <div class="flex items-center flex-col mt-3">
-            <p class="text-[12px] leading-normal font-medium font-gilroymedium heading-color md:text-[20px]">Email</p>
-            <h3 class="text-sm leading-normal font-medium font-gilroysemibold mt-2 heading-color md:text-[30px]"><a
+            <p class="text-[12px] leading-normal font-medium font-gilroymedium heading-color md:text-[12px]">Email</p>
+            <h3 class="text-sm leading-normal font-medium font-gilroysemibold mt-2 heading-color md:text-[22px]"><a
                     href="mailto: deepakkurmiofficial@gmail.com">
                     deepakkurmiofficial@gmail.com
                 </a></h3>
@@ -465,7 +465,7 @@
             <h2 class="text-[14px] leading-normal font-medium font-gilroybold heading-color md:text-[22px]">
                 <i>DP</i>
             </h2>
-            <p class="text-[12px] leading-normal font-medium font-gilroymedium heading-color md:text-[20px] md:mx-2">
+            <p class="text-[12px] leading-normal font-medium font-gilroymedium heading-color md:mx-2">
                 All Rights
                 are reserved @<span class="year"></span></p>
         </div>
@@ -490,6 +490,51 @@
             autoInsertCss: true,
         });
 
+    </script>
+
+    <!-- slider -->
+    <script>
+        const splide = new Splide('.splide', {
+            type: 'loop',
+            drag: 'free',
+            focus: 'center',
+            snap: true,
+            arrows: false,
+            pagination: false,
+            autoplay: true,
+            permove: 1,
+            perPage:3,
+            gap: '3rem',
+            padding: '3rem',
+            breakpoints: {
+                480:{
+                    perPage: 1,
+                    gap: '2rem'
+                },
+                640: {
+                    perPage: 3,
+                    gap: '2.5rem'
+                }
+            },
+            autoScroll: {
+                speed: 1,
+            },
+        });
+
+        splide.mount();
+    </script>
+
+    <!-- animation -->
+    <script>
+        anime({
+            targets: '.floating',
+            translateY: [
+                { value: -20, duration: 1000 },
+                { value: 0, duration: 1000 }
+            ],
+            easing: 'easeInOutSine',
+            loop: true
+        });
     </script>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>

@@ -30,7 +30,7 @@ closeMenu.addEventListener('click', () => {
 
 allList.forEach((link) => {
     link.addEventListener('click', () => {
-        if (window.matchMedia('(max-width: 767px)').matches) {
+        if (window.matchMedia('(max-width: 768px)').matches) {
             closeMenuData();
         }
     });

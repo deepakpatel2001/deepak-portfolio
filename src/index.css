@@ -120,6 +120,14 @@ nav {
     width: 100%;
 }
 
+.right-desk-div {
+    rotate: -10deg;
+}
+
+.splide__slide a img {
+    max-width: 100%;
+}
+
 .experience-background-color {
     background: radial-gradient(
         191.98% 141.42% at 0% 0%,
@@ -129,8 +137,17 @@ nav {
     );
 }
 
-.hero-section{
-    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 57, 166, 0.15) 0%, rgba(255, 255, 255, 0.00) 100%);
+.floating {
+    position: absolute;
+    transform: translateX(50%);    
+}
+
+.center-desk-div {
+    background: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(0, 57, 166, 0.15) 0%,
+        rgba(255, 255, 255, 0) 100%
+    );
 }
 
 @media screen and (min-width: 768px) {
