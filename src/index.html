@@ -22,11 +22,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 </head>
 
-<body>
+<body class="mode">
     <!-- Navbar -->
     <nav class="h-[70px] flex justify-between p-[15px] items-center navbar top-0 border-2 md:fixed">
         <div class="nav-left-image">
-            <img src="images/profileImage.jpg" alt="deepak patel" class="h-14 w-14 mix-blend-multiply">
+            <img src="images/profileImage.jpg" alt="deepak patel" class="h-14 w-14">
+        </div>
+        <div class="">
+            <i class="fa-regular fa-sun text-[30px] text-[white] hidden cursor-pointer" title="Light Mode"></i>
+            <i class="fa-solid fa-moon text-[30px] cursor-pointer" title="Dark Mode"></i>
         </div>
         <div class="nav-right-menu relative md:hidden">
             <div>
@@ -158,9 +162,9 @@
                             target="_blank">Contact Me</a>
                     </button>
 
-                    <button class="my-3 md:mx-4 text-center rounded-md border-[1px] border-black ">
+                    <button class="my-3 md:mx-4 text-center rounded-md border-[1px] resume-btn">
                         <a href="documents/Deepak_Patel_Resume.pdf"
-                            class="w-full rounded-md text-center font-normal text-black p-[12px] block md:p-[9px]"
+                            class="w-full rounded-md text-center font-normal p-[12px] block md:p-[9px]"
                             target="_blank" download>Resume</a>
                     </button>
                 </div>
@@ -213,7 +217,7 @@
         </h2>
         <div class="flex justify-center flex-col md:flex-row md:gap-x-9 md:w-full md:justify-between">
             <div
-                class="one-exp experience-background-color rounded-[20px] border-[0.5px] border-[#53515140] h-[300px] flex justify-center items-center flex-col my-3 heading-color md:w-[437px] lg:w-[680px]">
+                class="one-exp experience-background-light-color experience-background-dark-color rounded-[20px] border-[0.5px] border-[#53515140] h-[300px] flex justify-center items-center flex-col my-3 heading-color md:w-[437px] lg:w-[680px]">
                 <div>
                     <h2 class="text-[96px] text-center inline leading-[117.6px] font-gilroysemibold ">5</h2>
                     <span class="font-medium text-8 leading-10 font-gilroysemibold">months</span>
@@ -229,7 +233,7 @@
                 </div>
             </div>
             <div
-                class="second-exp experience-background-color rounded-[20px] border-[0.5px] border-[#53515140] h-[300px] flex justify-center items-center flex-col my-3 md:w-[437px] lg:w-[680px]">
+                class="second-exp experience-background-light-color experience-background-dark-color rounded-[20px] border-[0.5px] border-[#53515140] h-[300px] flex justify-center items-center heading-color flex-col my-3 md:w-[437px] lg:w-[680px]">
                 <div class="">
                     <h2 class="text-[96px] text-center inline leading-[117.6px] font-gilroysemibold">1</h2>
                     <span class="font-medium text-8 leading-10 font-gilroysemibold">month</span>
@@ -253,7 +257,7 @@
             the people</h2>
 
         <div
-            class="parent-testimonials flex justify-center items-center flex-col rounded-[20px] bg-[#FBFBFB] mt-3 gap-y-3 md:flex-row md:justify-between">
+            class="parent-testimonials flex justify-center items-center flex-col rounded-[20px] mt-3 gap-y-3 md:flex-row md:justify-between testimonils-details">
 
             <div class="flex first-member flex-col justify-center items-center md:w-[261px] lg:h-[207px] lg:w-[680px] ">
 
@@ -290,12 +294,12 @@
     </section>
 
     <!-- Services -->
-    <section id="services" class="services mt-14 mx-3 md:mx-5">
+    <section id="services" class="services mt-14 mx-3 md:mx-5 ">
         <h2
             class="text-center font-medium leading-normal heading-text font-gilroysemibold heading-color md:text-[40px]">
             Services</h2>
         <div
-            class="flex flex-col mt-3 rounded-md bg-[#F3F3F3] md:flex-row md:justify-center gap-x-7 lg:justify-between">
+            class="flex flex-col mt-3 rounded-md bg-[#F3F3F3] md:flex-row md:justify-center gap-x-7 lg:justify-between testimonils-details">
             <div
                 class="service-div flex justify-center items-center text-center flex-col transition duration-300 ease-in-out hover:bg-[#0039A6] hover:text-yellow-200 text-[18px] font-normal leading-normal rounded-md py-[12px] md:px-3 md:my-3 group">
 
@@ -434,13 +438,13 @@
                     with separate control panel for admins and customers.</p>
                 <div class="w-full flex justify-start items-start mt-3 font-gilroyregular gap-x-[6px] md:mt-4">
                     <button
-                        class="rounded-[50px] skill-btn text-white py-2 px-[5px] md:text-[20px] md:px-5 ">Node.js</button>
+                        class="rounded-[50px] skill-btn py-2 px-[5px] md:text-[20px] md:px-5 ">Node.js</button>
                     <button
-                        class="rounded-[50px] skill-btn text-white py-2 px-[5px] md:text-[20px] md:px-5">React.js</button>
+                        class="rounded-[50px] skill-btn py-2 px-[5px] md:text-[20px] md:px-5">React.js</button>
                     <button
-                        class="rounded-[50px] skill-btn text-white py-2 px-[5px] md:text-[20px] md:px-5">MongoDB</button>
+                        class="rounded-[50px] skill-btn py-2 px-[5px] md:text-[20px] md:px-5">MongoDB</button>
                     <button
-                        class="rounded-[50px] skill-btn text-white py-2 px-[5px] md:text-[20px] md:px-5">Tailwind</button>
+                        class="rounded-[50px] skill-btn py-2 px-[5px] md:text-[20px] md:px-5">Tailwind</button>
                 </div>
             </div>
         </div>

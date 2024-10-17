@@ -7,12 +7,36 @@
 /* this is mainly use for switching dark to bright */
 :root {
     --dark-white: #ffffff;
+    --dark-black: #1B1B1B;
     --dark-active: #209900;
     --dark-heading: black;
     --dark-paragraph: #535151;
+    --dark-resume-btn-border: #1B1B1B;
+    --dark-testimonials-border: #53515140;
+    --dark-testimonials-bg-color: #FBFBFB;
+    --dark-testimonials-color: #000000;
     --dark-blue: #0039a6;
     --dark-btn-color: #fcf6f5;
     --dark-skill-btn: #1b1b1b;
+}
+
+.mode{
+    background-color: var(--dark-white);
+}
+
+.dark{
+    --dark-white: #1B1B1B;
+    --dark-black: #FFFFFF;
+    --dark-active: #209900;
+    --dark-heading: #FFFFFF;
+    --dark-paragraph: #D9D9D9;
+    --dark-resume-btn-border: #FFFFFF;
+    --dark-testimonials-border: #53515140;
+    --dark-testimonials-bg-color: #303030;
+    --dark-testimonials-color: #FFFFFF;
+    --dark-blue: #0039a6;
+    --dark-btn-color: #fcf6f5;
+    --dark-skill-btn: #FFFFFF;
 }
 
 .nav-bg-color {
@@ -43,8 +67,20 @@
     background: var(--dark-blue);
 }
 
+.resume-btn{
+    border-color: var(--dark-resume-btn-border);
+    color: var(--dark-resume-btn-border);
+}
+
+.testimonils-details{
+    border: var(--dark-testimonials-border);
+    background-color: var(--dark-testimonials-bg-color);
+    color: var(--dark-testimonials-color);
+}
+
 .skill-btn {
     background-color: var(--dark-skill-btn);
+    color: var(--dark-white);
 }
 
 .heading-text {
@@ -64,6 +100,7 @@ nav {
     top: 0;
     left: 0;
     background-color: var(--dark-white);
+    border: var(--dark-white);
 }
 
 .close {
@@ -78,6 +115,7 @@ nav {
 .hover-list {
     margin: 20px 0;
     font-size: 20px;
+    color: var(--dark-black);
 }
 
 .hover-list:hover {
@@ -128,7 +166,7 @@ nav {
     max-width: 100%;
 }
 
-.experience-background-color {
+.experience-background-light-color {
     background: radial-gradient(
         191.98% 141.42% at 0% 0%,
         rgba(11, 32, 222, 0.3) 0%,
@@ -136,6 +174,7 @@ nav {
         rgba(11, 32, 222, 0.3) 100%
     );
 }
+
 
 .floating {
     position: absolute;

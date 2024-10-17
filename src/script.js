@@ -6,6 +6,22 @@ const navbarLists = document.querySelector('.nav-list');
 const activeMenu = document.querySelector('.allMenus');
 const allList = document.querySelectorAll('.block');
 
+const lightBtn = document.querySelector('.fa-sun');
+const darkBtn = document.querySelector('.fa-moon');
+const body = document.querySelector('body');
+
+darkBtn.addEventListener('click', () => {
+    darkBtn.style.display = 'none';
+    lightBtn.style.display = 'block';
+    body.classList.add('dark');
+});
+
+lightBtn.addEventListener('click', () => {
+    darkBtn.style.display = 'block';
+    lightBtn.style.display = 'none';
+    body.classList.remove('dark');
+});
+
 openMenu.addEventListener('click', () => {
     navbarLists.style.display = 'block';
     closeMenu.style.display = 'block';
