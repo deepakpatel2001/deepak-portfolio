@@ -7,36 +7,36 @@
 /* this is mainly use for switching dark to bright */
 :root {
     --dark-white: #ffffff;
-    --dark-black: #1B1B1B;
+    --dark-black: #1b1b1b;
     --dark-active: #209900;
     --dark-heading: black;
     --dark-paragraph: #535151;
-    --dark-resume-btn-border: #1B1B1B;
+    --dark-resume-btn-border: #1b1b1b;
     --dark-testimonials-border: #53515140;
-    --dark-testimonials-bg-color: #FBFBFB;
+    --dark-testimonials-bg-color: #fbfbfb;
     --dark-testimonials-color: #000000;
     --dark-blue: #0039a6;
     --dark-btn-color: #fcf6f5;
     --dark-skill-btn: #1b1b1b;
 }
 
-.mode{
+.mode {
     background-color: var(--dark-white);
 }
 
-.dark{
-    --dark-white: #1B1B1B;
-    --dark-black: #FFFFFF;
+.dark {
+    --dark-white: #1b1b1b;
+    --dark-black: #ffffff;
     --dark-active: #209900;
-    --dark-heading: #FFFFFF;
-    --dark-paragraph: #D9D9D9;
-    --dark-resume-btn-border: #FFFFFF;
+    --dark-heading: #ffffff;
+    --dark-paragraph: #d9d9d9;
+    --dark-resume-btn-border: #ffffff;
     --dark-testimonials-border: #53515140;
     --dark-testimonials-bg-color: #303030;
-    --dark-testimonials-color: #FFFFFF;
+    --dark-testimonials-color: #ffffff;
     --dark-blue: #0039a6;
     --dark-btn-color: #fcf6f5;
-    --dark-skill-btn: #FFFFFF;
+    --dark-skill-btn: #ffffff;
 }
 
 .nav-bg-color {
@@ -67,12 +67,12 @@
     background: var(--dark-blue);
 }
 
-.resume-btn{
+.resume-btn {
     border-color: var(--dark-resume-btn-border);
     color: var(--dark-resume-btn-border);
 }
 
-.testimonils-details{
+.testimonils-details {
     border: var(--dark-testimonials-border);
     background-color: var(--dark-testimonials-bg-color);
     color: var(--dark-testimonials-color);
@@ -100,7 +100,7 @@ nav {
     top: 0;
     left: 0;
     background-color: var(--dark-white);
-    border: var(--dark-white);
+    border-color: var(--dark-white);
 }
 
 .close {
@@ -110,6 +110,7 @@ nav {
 .nav-list {
     z-index: 9;
     display: none;
+    border-color: var(--dark-white);
 }
 
 .hover-list {
@@ -150,6 +151,14 @@ nav {
     );
 }
 
+.main-dark {
+    background: radial-gradient(
+        42.93% 42.93% at 50% 52.09%,
+        rgba(0, 57, 166, 0.3) 0%,
+        rgba(22, 32, 51, 0) 100%
+    );
+}
+
 .desk-view-image {
     display: none;
 }
@@ -175,10 +184,18 @@ nav {
     );
 }
 
+.experience-background-dark-color {
+    background: radial-gradient(
+        191.98% 141.42% at 0% 0%,
+        rgba(11, 32, 222, 1) 0%,
+        rgba(236, 236, 236, 0.7) 25.3%,
+        rgba(11, 32, 222, 1) 100%
+    );
+}
 
 .floating {
     position: absolute;
-    transform: translateX(50%);    
+    transform: translateX(50%);
 }
 
 .center-desk-div {

@@ -22,7 +22,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 </head>
 
-<body class="mode">
+<body class="mode 2xl:mx-10">
     <!-- Navbar -->
     <nav class="h-[70px] flex justify-between p-[15px] items-center navbar top-0 border-2 md:fixed">
         <div class="nav-left-image">
@@ -59,8 +59,7 @@
     <!-- Hero section -->
     <main
         class="mt-24 items-center text-center mx-3 flex flex-col justify-center main md:mx-16 lg:h-dvh lg:mx-4 hero-section lg:mt-16">
-
-        <div class="inner-main-div md:flex md:justify-between md:items-center md:flex-col lg:flex-row">
+        <div class="inner-main-div md:flex md:justify-between md:items-center md:flex-col lg:flex-row ">
             <div class="hidden left-desk-div lg:flex flex-col relative">
                 <div
                     class="floating left-top w-[90px] h-[90px] flex justify-end left-desk-div-image absolute -top-[300px] -right-[80px]">
@@ -119,29 +118,24 @@
                         class="w-full rounded-md p-[12px] btn-font-color text-center font-normal dark-bg-blue block md:inline"
                         target="_blank">Contact Me</a>
                 </button>
-
-                <!-- <div class="flex justify-center items-center text-center mt-4 md:w-[294px]">
-                    <a href="https://www.linkedin.com/in/dev-deepak-patel/"
-                        class="w-full md:w-[294px] h-[49px] rounded-md p-[12px] connect-button btn-font-color text-center font-normal dark-bg-blue"
-                        target="_blank">Let's Connect</a>
-                </div> -->
             </div>
         </div>
 
     </main>
 
     <!-- About Me -->
-    <section class="mt-14 mx-3 flex justify-center items-center flex-col md:mx-5">
+    <section class="mt-4 mx-3 flex justify-center items-center flex-col md:mx-5 lg:mt-0">
         <h2 class="heading-color heading-text font-medium font-gilroysemibold md:text-[40px]">Know me more</h2>
 
-        <div class="desk-view lg:flex lg:gap-x-8">
-            <div class="self-image-box rounded-[30px] mt-3">
+        <div class="desk-view md:flex md:flex-col md:justify-center md:items-center lg:gap-x-8 mt-6 lg:flex-row">
+            <div class="self-image-box rounded-[30px] md:w-[400px] md:h-[370px] lg:w-[700px] lg:h-[238px]">
                 <img src="images/self-image.png" alt="my photo" class="w-full h-full lg:hidden">
                 <img src="images/desk-view-image.png" alt="desk-view image"
-                    class="sm:hidden md:hidden lg:block lg:w-[700px] lg:h-[238px] desk-view-image">
+                    class="sm:hidden md:hidden lg:block w-full h-full desk-view-image">
             </div>
             <div class="desk-view-content">
-                <p class="text-justify mt-3 mx-1 font-gilroyregular heading-color text-[16px] md:text-[20px]">My name is
+                <p class="text-justify mt-3 mx-1 font-gilroyregular heading-color text-[16px] md:text-[20px] lg:mt-0">My
+                    name is
                     Deepak
                     Patel and I'm
                     from Vidisha
@@ -154,17 +148,12 @@
                     because of my Adaptability. I enjoy coding.
                 </p>
 
-                <div
-                    class="w-full my-4 flex flex-col md:flex-row md:mt-4 md:justify-center md:items-center lg:items-start lg:justify-start lg:mt-10">
-                    <button class="text-center rounded-md">
-                        <a href="tel:+919098343002"
-                            class="w-full rounded-md p-[12px] btn-font-color text-center font-normal dark-bg-blue block md:inline"
-                            target="_blank">Contact Me</a>
-                    </button>
 
-                    <button class="my-3 md:mx-4 text-center rounded-md border-[1px] resume-btn">
+                <div
+                    class="w-full my-4 flex flex-col md:flex-row md:mt-6 md:justify-center md:items-center lg:items-start lg:justify-start lg:mt-10 lg:">
+                    <button class="btn-connect text-center rounded-md md:flex md:justify-center md:items-center mt-4">
                         <a href="documents/Deepak_Patel_Resume.pdf"
-                            class="w-full rounded-md text-center font-normal p-[12px] block md:p-[9px]"
+                            class="w-full rounded-md p-[12px] btn-font-color text-center font-normal dark-bg-blue block md:inline"
                             target="_blank" download>Resume</a>
                     </button>
                 </div>
@@ -174,9 +163,9 @@
 
     <!-- Tech Stack -->
     <section class="mt-14 mx-3 text-center md:mx-5" id="skills">
-        <h2 class="heading-color font-medium heading-text mb-[10px] leading-5 font-gilroysemibold md:text-[40px]">Tech
+        <h2 class="heading-color font-medium heading-text leading-5 font-gilroysemibold md:text-[40px]">Tech
             Stack</h2>
-        <div class="h-[189px] flex justify-evenly items-center mt-8  flex-wrap gap-x-20 gap-y-2">
+        <div class="flex justify-evenly items-center mt-12 text-center flex-wrap gap-x-20 md:gap-x-20 gap-y-1">
 
             <div class="w-10 h-14 md:w-[100px] md:h-[100px]">
                 <img src="images/sm-html.png" alt="html">
@@ -187,7 +176,6 @@
             <div class="w-10 h-14 md:w-[100px] md:h-[100px]">
                 <img src="images/sm-js.png" alt="javascript">
             </div>
-
             <div class="w-10 h-14 md:w-[100px] md:h-[100px]">
                 <img src="images/sm-bootstrap.png" alt="bootstrap">
             </div>
@@ -197,8 +185,6 @@
             <div class="w-10 h-14 md:w-[100px] md:h-[100px]">
                 <img src="images/sm-react.png" alt="react">
             </div>
-
-
             <div class="w-10 h-14 md:w-[100px] md:h-[100px]">
                 <img src="images/sm-node.png" alt="node">
             </div>
@@ -215,9 +201,9 @@
     <section class="text-center mt-14 mx-3 md:mx-5">
         <h2 class="heading-text font-medium leading-normal font-gilroysemibold heading-color md:text-[40px]">Experience
         </h2>
-        <div class="flex justify-center flex-col md:flex-row md:gap-x-9 md:w-full md:justify-between">
+        <div class="flex justify-center mt-6 flex-col md:flex-row md:gap-x-4 md:w-full md:justify-between">
             <div
-                class="one-exp experience-background-light-color experience-background-dark-color rounded-[20px] border-[0.5px] border-[#53515140] h-[300px] flex justify-center items-center flex-col my-3 heading-color md:w-[437px] lg:w-[680px]">
+                class="one-exp experience-container experience-background-light-color rounded-[20px] border-[0.5px] border-[#53515140] h-[300px] flex justify-center items-center flex-col my-3 heading-color md:w-[437px] lg:w-[680px]">
                 <div>
                     <h2 class="text-[96px] text-center inline leading-[117.6px] font-gilroysemibold ">5</h2>
                     <span class="font-medium text-8 leading-10 font-gilroysemibold">months</span>
@@ -233,7 +219,7 @@
                 </div>
             </div>
             <div
-                class="second-exp experience-background-light-color experience-background-dark-color rounded-[20px] border-[0.5px] border-[#53515140] h-[300px] flex justify-center items-center heading-color flex-col my-3 md:w-[437px] lg:w-[680px]">
+                class="second-exp experience-container experience-background-light-color rounded-[20px] border-[0.5px] border-[#53515140] h-[300px] flex justify-center items-center heading-color flex-col my-3 md:w-[437px] lg:w-[680px]">
                 <div class="">
                     <h2 class="text-[96px] text-center inline leading-[117.6px] font-gilroysemibold">1</h2>
                     <span class="font-medium text-8 leading-10 font-gilroysemibold">month</span>
@@ -257,7 +243,7 @@
             the people</h2>
 
         <div
-            class="parent-testimonials flex justify-center items-center flex-col rounded-[20px] mt-3 gap-y-3 md:flex-row md:justify-between testimonils-details">
+            class="parent-testimonials flex justify-center items-center flex-col rounded-[20px] mt-10 gap-y-3 md:flex-row md:justify-between testimonils-details">
 
             <div class="flex first-member flex-col justify-center items-center md:w-[261px] lg:h-[207px] lg:w-[680px] ">
 
@@ -299,7 +285,7 @@
             class="text-center font-medium leading-normal heading-text font-gilroysemibold heading-color md:text-[40px]">
             Services</h2>
         <div
-            class="flex flex-col mt-3 rounded-md bg-[#F3F3F3] md:flex-row md:justify-center gap-x-7 lg:justify-between testimonils-details">
+            class="flex flex-col mt-6 rounded-md bg-[#F3F3F3] md:flex-row md:justify-center gap-x-7 lg:justify-between testimonils-details">
             <div
                 class="service-div flex justify-center items-center text-center flex-col transition duration-300 ease-in-out hover:bg-[#0039A6] hover:text-yellow-200 text-[18px] font-normal leading-normal rounded-md py-[12px] md:px-3 md:my-3 group">
 
@@ -364,12 +350,11 @@
             Some mini
             projects
         </h2>
-        <div class="splide__track rounded-[20px] p-4 ">
+        <div class="splide__track rounded-[20px] mt-8">
             <div class="splide__list border-2 border-black">
                 <div class="splide__slide rounded-2xl overflow-hidden ">
                     <a href="https://conref.in/" target="_blank" class="z-0 block">
-                        <img src="images/carousel-1.png" alt="conref" data-splide-lazy="path-to-the-image"
-                            class="" />
+                        <img src="images/carousel-1.png" alt="conref" data-splide-lazy="path-to-the-image" class="" />
                     </a>
                 </div>
                 <div class="splide__slide rounded-2xl overflow-hidden ">
@@ -393,12 +378,14 @@
                     </a>
                 </div>
                 <div class="splide__slide rounded-2xl overflow-hidden ">
-                    <a href="https://english-meme-jl3spahtv-deepak-patels-projects.vercel.app/" target="_blank" class="z-0 block">
+                    <a href="https://english-meme-jl3spahtv-deepak-patels-projects.vercel.app/" target="_blank"
+                        class="z-0 block">
                         <img src="images/carousel-6.png" alt="conref" data-splide-lazy="path-to-the-image" class="" />
                     </a>
                 </div>
                 <div class="splide__slide rounded-2xl overflow-hidden ">
-                    <a href="https://testimonials-page-cvuepbk77-deepak-patels-projects.vercel.app/" target="_blank" class="z-0 block">
+                    <a href="https://testimonials-page-cvuepbk77-deepak-patels-projects.vercel.app/" target="_blank"
+                        class="z-0 block">
                         <img src="images/carousel-7.png" alt="conref" data-splide-lazy="path-to-the-image" class="" />
                     </a>
                 </div>
@@ -412,15 +399,15 @@
     </section>
 
     <!-- Major Project -->
-    <section class="mt-8 mx-3 md:mx-5">
+    <section class="mt-8 mx-6 md:mx-5">
         <h2 class="text-center heading-text font-medium leading-normal font-gilroysemibold heading-color md:text-[40px]"
             id="services">
             Project which I
             worked on</h2>
         <div
-            class="flex justify-center items-center flex-col mt-3 lg:flex-row lg:gap-x-9 lg:justify-start lg:items-start lg:mt-8">
-            <div class="hotel-image-container self-start w-full">
-                <img src="images/hotel image.png" alt="Hotel Image" class="w-full lg:hidden">
+            class="flex justify-center items-center flex-col mt-6 lg:flex-row lg:gap-x-9 lg:justify-start lg:items-start lg:mt-8">
+            <div class="hotel-image-container self-start w-full md:h-[400px] lg:h-auto">
+                <img src="images/hotel image.png" alt="Hotel Image" class="w-full h-full lg:hidden">
                 <img src="images/desk-view-hotel.png" alt="Hotel Image" class="lg:block hidden">
             </div>
 
@@ -437,21 +424,17 @@
                     in specific regions, allowing users to review and search based on price ranges,
                     with separate control panel for admins and customers.</p>
                 <div class="w-full flex justify-start items-start mt-3 font-gilroyregular gap-x-[6px] md:mt-4">
-                    <button
-                        class="rounded-[50px] skill-btn py-2 px-[5px] md:text-[20px] md:px-5 ">Node.js</button>
-                    <button
-                        class="rounded-[50px] skill-btn py-2 px-[5px] md:text-[20px] md:px-5">React.js</button>
-                    <button
-                        class="rounded-[50px] skill-btn py-2 px-[5px] md:text-[20px] md:px-5">MongoDB</button>
-                    <button
-                        class="rounded-[50px] skill-btn py-2 px-[5px] md:text-[20px] md:px-5">Tailwind</button>
+                    <button class="rounded-[50px] skill-btn py-2 px-[5px] md:text-[15px] md:px-5 ">Node.js</button>
+                    <button class="rounded-[50px] skill-btn py-2 px-[5px] md:text-[15px] md:px-5">React.js</button>
+                    <button class="rounded-[50px] skill-btn py-2 px-[5px] md:text-[15px] md:px-5">MongoDB</button>
+                    <button class="rounded-[50px] skill-btn py-2 px-[5px] md:text-[15px] md:px-5">Tailwind</button>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Details -->
-    <section class="mt-14 mx-3 md:mx-5">
+    <section class="mt-6 mx-3 md:mx-5">
         <h2 class="font-medium text-2xl leading-normal text-center font-gilroysemibold heading-color md:text-[40px]">
             Contact Me</h2>
         <div class="flex items-center flex-col mt-3">
@@ -507,11 +490,11 @@
             pagination: false,
             autoplay: true,
             permove: 1,
-            perPage:3,
+            perPage: 3,
             gap: '3rem',
             padding: '3rem',
             breakpoints: {
-                480:{
+                480: {
                     perPage: 1,
                     gap: '2rem'
                 },
@@ -543,10 +526,10 @@
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script> -->
 
     <!-- script for carousel -->
-    <!-- <script src="../node_modules/flowbite/dist/flowbite.min.js"></script> -->
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
 
 </body>
 

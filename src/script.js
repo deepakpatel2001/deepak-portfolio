@@ -9,17 +9,32 @@ const allList = document.querySelectorAll('.block');
 const lightBtn = document.querySelector('.fa-sun');
 const darkBtn = document.querySelector('.fa-moon');
 const body = document.querySelector('body');
+const mainHeroSection = document.querySelector('.hero-section');
+const experience = document.querySelectorAll('.experience-container');
+console.log(experience);
 
 darkBtn.addEventListener('click', () => {
     darkBtn.style.display = 'none';
     lightBtn.style.display = 'block';
     body.classList.add('dark');
+    mainHeroSection.classList.add('main-dark');
+    mainHeroSection.classList.remove('main');
+    experience.forEach((elem) => {
+        elem.classList.add('experience-background-dark-color');
+        elem.classList.remove('experience-background-light-color');
+    })
 });
 
 lightBtn.addEventListener('click', () => {
     darkBtn.style.display = 'block';
     lightBtn.style.display = 'none';
     body.classList.remove('dark');
+    mainHeroSection.classList.remove('main-dark');
+    mainHeroSection.classList.add('main');
+    experience.forEach((elem) => {
+        elem.classList.remove('experience-background-dark-color');
+        elem.classList.add('experience-background-light-color');
+    });
 });
 
 openMenu.addEventListener('click', () => {
@@ -46,7 +61,7 @@ closeMenu.addEventListener('click', () => {
 
 allList.forEach((link) => {
     link.addEventListener('click', () => {
-        if (window.matchMedia('(max-width: 768px)').matches) {
+        if (window.matchMedia('(max-width: 767px)').matches) {
             closeMenuData();
         }
     });
